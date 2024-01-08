@@ -15,13 +15,13 @@ header {
 
 /* Estilos para el Nombre (Jack) y Redes Sociales */
 header h1 {
-    font-size: 5vw;
+    font-size: 5vw; /* Ajuste dinámico basado en el ancho de la pantalla */
     font-weight: bold;
     margin: 0;
 }
 
 header .social-media {
-    font-size: 1.5vw;
+    font-size: 1.5vw; /* Ajuste dinámico basado en el ancho de la pantalla */
 }
 
 /* Diseño de Columnas */
@@ -45,18 +45,17 @@ header .social-media {
 }
 
 .gray-highlight {
-    color:gray;
+    color: gray;
     font-weight: bold;
 }
 
 footer {
     text-align: right;
     font-style: italic;
-    font-size: 12px; /* Puedes ajustar el tamaño según tus necesidades */
+    font-size: 0.7rem; /* Tamaño reducido y en rem para mejor escalabilidad */
     color: yellow;
-    padding: 10px; /* Agrega un poco de espacio alrededor del texto */
+    padding: 10px;
 }
-
 
 /* Media Queries para dispositivos más pequeños */
 @media screen and (max-width: 768px) {
@@ -66,11 +65,11 @@ footer {
     }
 
     header h1 {
-        font-size: 10vw;
+        font-size: 10vw; /* Tamaño de fuente más grande para visibilidad en móviles */
     }
 
     header .social-media {
-        font-size: 3vw;
+        font-size: 3vw; /* Tamaño de fuente ajustado para móviles */
     }
 
     .column-container {
@@ -79,11 +78,11 @@ footer {
 
     .column-container-left,
     .column-container-right {
-        width: 100%;
+        width: 100%; /* Las columnas ocupan todo el ancho en dispositivos móviles */
     }
 
     .column-container-right {
         border-left: none;
-        border-top: 2px solid gray;
+        border-top: 2px solid gray; /* Ajuste de la línea divisoria para móviles */
     }
 }
