@@ -1,0 +1,89 @@
+/* Estilos Base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el Encabezado (Header) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para el Nombre (Jack) y Redes Sociales */
+header h1 {
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+header .social-media {
+    font-size: 1.5vw;
+}
+
+/* Diseño de Columnas */
+.column-container {
+    display: flex;
+}
+
+.column-container-left,
+.column-container-right {
+    width: 50%;
+    padding: 10px;
+}
+
+.column-container-left {
+    background-color: darkblue;
+    color: white;
+}
+
+.column-container-right {
+    border-left: 2px solid gray;
+}
+
+.gray-highlight {
+    color:gray;
+    font-weight: bold;
+}
+
+footer {
+    text-align: right;
+    font-style: italic;
+    font-size: 12px; /* Puedes ajustar el tamaño según tus necesidades */
+    color: yellow;
+    padding: 10px; /* Agrega un poco de espacio alrededor del texto */
+}
+
+
+/* Media Queries para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 10vw;
+    }
+
+    header .social-media {
+        font-size: 3vw;
+    }
+
+    .column-container {
+        flex-direction: column;
+    }
+
+    .column-container-left,
+    .column-container-right {
+        width: 100%;
+    }
+
+    .column-container-right {
+        border-left: none;
+        border-top: 2px solid gray;
+    }
+}
